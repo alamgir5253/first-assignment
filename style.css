@@ -1,0 +1,296 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container{
+    width: 1200px;
+    margin: auto;}
+  /* reuseble-component */
+  .btn{
+    padding: 10px 40px;
+    background: #000;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  a{text-decoration: none;
+    color: #fff; }
+
+    section{margin:50px 0;}
+
+  /* header section start */
+
+  .header-parent-div {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+      background-repeat: no-repeat;
+      background-position:  center;
+      background-size: cover; 
+      background-image: url(./images/shapes/shape-4.png);
+  }
+  .header-left {
+    width: 50%;
+    margin-top: 140px;
+    padding-left: 100px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .header-left-heading{
+    position: relative;
+  }
+
+  .header-left-heading::after {
+    content: "";
+    height: 80%;
+    width: 5px;
+    background: #60a3bc;
+    position:absolute;
+    left: -15px;
+    top: 12px;
+    border-radius: 10px;
+  }
+
+  .header-left-heading h1 {
+    color: #222;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin: 0;
+  }
+  .header-left-heading h2 {
+    font-size: 55px;
+    color: #82ccdd;
+    text-transform: capitalize;
+    margin: 0;
+
+  }
+
+  .header-left p {
+    font-size: 18px;
+    color: gray;
+    margin-top: 50px;
+  }
+  .header-btn {
+    margin-top: 30px;
+    background:#60a3bc;
+  }
+
+  .header-right {
+    width: 50%;
+    margin-top: 80px;
+  }
+  .header-right img {
+    width: 70%;
+  }
+  /* header section end */
+
+  /* my-skill-section-start */
+  .my-skill-heading{margin-bottom: 50px;}
+
+  .my-skill-heading h2{
+    text-align: center;
+    font-size: 50px;
+    text-transform: capitalize;
+    font-family:font-family: 'Merriweather', serif;
+    
+  }
+    .my-skill-heading h2 span{
+      color: #60a3bc;;
+    }
+    .my-skill-parent-div{
+      display: flex;
+    justify-content: center;
+    }
+
+    .skill-child-1,.skill-child-2,.skill-child-3{
+      width: 300px;
+      border-radius: 10px;
+      padding:40px 20px;
+      margin: 0 20px;}
+
+      .skill-child-1{
+        background:#F8EFBA;
+      }
+
+      .skill-child-2{
+        background: #9AECDB;
+      }
+
+      .skill-child-3{
+        background: #f8c291;
+      }
+
+    .skill-child-1 img,.skill-child-2 img,.skill-child-3 img{
+      width: 150px;}
+
+      .skill-child-1 h2,.skill-child-2 h2,.skill-child-3 h2{
+         text-transform: uppercase;
+         margin: 10px 0;}
+
+        .skill-child-1 p,.skill-child-2 p,.skill-child-3 p{
+        color: #424242;
+        font-family: 'Inter', sans-serif;text-transform:unset;
+        }
+        
+         /* my-skill-section-end */
+
+        /* about-me-section start */
+        .about-me-parent{
+          display: flex;
+          justify-content: space-between;
+          margin-top: 80px;
+          background-image: url(./images/shapes/shape-5.png);
+          background-repeat:no-repeat;
+          background-size: 230px;
+          background-position: left;}
+
+
+          .about-left{width: 50%;}
+
+          .about-left img{
+            width: 60%;
+            margin-left: 109px;}
+
+          .about-right{
+            width: 50%;
+            margin-top: 80px;
+          }
+
+          .about-right h2{
+            font-size: 50px;
+            color: #333333;
+            text-transform: uppercase;
+
+          }
+          .about-right p{
+            font-size: 18px;
+            color: #424242;
+            width: 500px;
+            padding-top: 20px;
+            line-height: 25px;
+            font-family: 'Roboto', sans-serif;
+          }
+          .about-btn{
+            background: #60a3bc;
+            margin-top: 50px;
+          }
+
+        /* about me section end */
+
+        /* my goal section start */
+        .my-goal-parent{
+          display: flex;
+          justify-content: space-between;
+          margin-top: 80px;
+        }
+        .my-goal-left{
+          width: 50%;
+          margin-left: 109px;
+          margin-top: 60px;
+        }
+
+          .my-goal-left h2{
+            font-size: 50px; 
+            color: #333333;
+            text-transform: uppercase;
+          }
+          .my-goal-left p{
+            font-size: 18px;
+            color: #424242;
+            width: 500px;
+            padding-top: 20px;
+            line-height: 25px;
+            text-align: left;
+            font-family: 'Roboto', sans-serif;
+          }
+
+        .my-goal-right{
+          width: 50%;
+        }
+        .my-goal-right img{
+          width: 60%;
+          margin-left: 50px;}
+
+          .goal-btn{ 
+            background: #60a3bc;
+            margin-top: 20px;
+          }
+  /* my goal section end */
+
+  /* social link section start */
+  .social-media-section-heading{
+    text-align: center;
+    font-size: 50px; 
+    text-transform: uppercase;
+  }
+
+    .social-media-section-heading span{
+      color: #60a3bc;
+    }
+
+  .social-link{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    background:#60a3bc;
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+    .social-link .social{
+      font-size: 40px;
+      border: 3px solid  #000;
+      border-radius: 50%;
+      height: 80px;
+      width: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #000;
+      transition: .5s ease-in-out;
+    }
+    .social-link .social:hover{
+      transform: rotate(360deg);
+      cursor: pointer;
+      border: 3px solid  #fff;
+      color: #fff;
+
+    }
+
+  /* social link section end */
+
+  /* footer start */
+  .footer-main{
+    background: #000;
+    text-align: center;
+    color: #fff;
+    padding:30px 0;}
+    
+    .footer-main h3{
+      font-size: 40px;
+      font-family: 'Vujahday Script', cursive;
+    }
+    .footer-main h3 span{
+      color: #60a3bc;
+    }
+    .footer-main p{
+      font-size: 16px;
+      text-transform: capitalize;
+      letter-spacing: 2px;
+      word-spacing: 2px;
+      margin-top: 5px;
+      font-family: 'Roboto', sans-serif;
+    }
+  /* footer end */
+
+
+
+
+
+
+
+
+
